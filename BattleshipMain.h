@@ -1,0 +1,8 @@
+//
+// Created by frede on 12-01-2024.
+//
+
+#ifndef BATTLESHIP_BATTLESHIPMAIN_H
+#define BATTLESHIP_BATTLESHIPMAIN_H
+
+#endif //BATTLESHIP_BATTLESHIPMAIN_H
