@@ -88,4 +88,7 @@ void placeShips(char [BOARD_SIZE][BOARD_SIZE]){
         }
 
     }
-}
+}/*
+ * if (isValidPlacement(board, shipSize, row, col, (isHorizontal ? 'H' : 'V'))) {
+ *If isHorizontal is true, it evaluates to 'H'; otherwise, it evaluates to 'V'. So, this part is determining whether the ship should be placed horizontally or vertically based on the value of isHorizontal.
+ * */
