@@ -35,7 +35,7 @@ int main(){
 
     printf("KJELLUS BATTLESHIP or something? \n\n now place ships");
     //place ships
-    placeShips(playerboard);
+
     //can ship be placed?
 
     //game start
@@ -48,7 +48,7 @@ int main(){
 void initializeBoard(char board[BOARD_SIZE][BOARD_SIZE]){
     for (int i=0; i< BOARD_SIZE; i++){
         for (int j = 0; j< BOARD_SIZE; j++){
-            board[i][j] = ' ';
+            board[i][j] = ' '; /* det her gør at alle celler i arayet er tomme og ikke viser noget synligt*/
         }
     }
 }
@@ -69,5 +69,23 @@ void printBoard(char board[BOARD_SIZE][BOARD_SIZE]){
             printf("%c ", board[i][j]);
         }
         printf("\n");
+    }
+}
+
+void placeShips(char [BOARD_SIZE][BOARD_SIZE]){
+    int shipSizes[NUM_SHIPS] = {5,4,3,3,2};
+
+    for (int i = 0; i < NUM_SHIPS; i++){
+        int shipSize = shipSizes[i]; //Load size of the ship in array
+
+
+        int isHorizontal = rand() % 2; //place randomly ship in position; 0 for vertical, 1 for horizontal
+
+        int row, col; //integers for both row and columns
+
+        if (isHorizontal){
+
+        }
+
     }
 }
